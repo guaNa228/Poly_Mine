@@ -62,6 +62,11 @@ article {
     padding-bottom: 35px;
 }
 
+article#faq {
+    padding-top: 75px;
+    padding-bottom: 150px;
+}
+
 @media (max-width: 820px) { 
     article {
         padding-top: 70px;
@@ -736,3 +741,65 @@ nav.social a:hover svg {
     filter: invert(42%) sepia(1503%) saturate(800%) hue-rotate(24deg) brightness(119%) contrast(119%);
 }
 
+.cd-faq__items {
+    width: 100%;
+    
+}
+
+.cd-faq__item {
+    width: 100%;
+    border: 1px solid white;
+    min-height: 60px;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+
+div.cd-faq__trigger {
+    height: 60px;
+    font-size: 30px;
+    color: white;
+    font-family: Montserrat-Bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cd-faq__trigger div {
+    display: block;
+    transition: .5s;
+}
+
+.cd-faq__trigger:hover div {
+    color: #35f252;
+}
+
+.cd-faq__content {
+    display: none;
+    color: white;
+    font-family: Montserrat-Medium;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.cd-faq__trigger.active+.cd-faq__content{
+    display: block;
+}
+
+.cd-faq__trigger img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.cd-faq__trigger:hover img {
+    filter: invert(99%) sepia(190%) saturate(1900%) hue-rotate(55deg) brightness(80%) contrast(90%);
+}
+
+a.def_link {
+    color: #35f252;
+    cursor: pointer;
+}

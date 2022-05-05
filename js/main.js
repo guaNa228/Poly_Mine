@@ -65,3 +65,26 @@ function disableScroll() {
 function enableScroll() {
     window.onscroll = function() {};
 }
+
+/* FAQ trigger */
+
+let questions = document.querySelectorAll('.cd-faq__trigger');
+questions.forEach((item) => {
+    item.addEventListener('click', questionOpen)
+});
+
+function questionOpen() {
+    this.classList.toggle('active');
+    if (this.classList.contains('active')) this.lastElementChild.src = this.lastElementChild.src.replace('plus', 'minus')
+    else this.lastElementChild.src = this.lastElementChild.src.replace('minus', 'plus')
+}
+
+/* Fast start button */
+let fast_start_button = document.querySelector('.header__content_button');
+fast_start_button.addEventListener('click', fastStart);
+let faqSection = document.querySelector('article#faq');
+let how_start = document.querySelector('.how_start');
+function fastStart() {
+    faqSection.scrollIntoView();
+    questionOpen.call(how_start);
+}
