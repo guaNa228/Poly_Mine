@@ -123,7 +123,7 @@ p.top-panel__description {
     flex-direction: column;
     justify-content: center;
     z-index: 0;
-    box-shadow: -15px 16px 27px 0px rgba(255, 224, 64, 0.2);
+    box-shadow: -15px 16px 27px 0px #35f252;
 }
 
 .mobile-menu_virgin {
@@ -263,10 +263,12 @@ header.header {
     width: 100%;
     height: 100%;
     background-color: #0E121C;
+    /*
     background-image: url(../files/header/bg.svg);
     background-position: 750px 150px;
     background-size: 700px 700px;
     background-repeat: no-repeat no-repeat;
+    */
 }
 
 
@@ -316,7 +318,17 @@ header.header {
     align-items: center;
 }
 
+.poly_link {
+    cursor: pointer;
+}
+
+.poly_link:hover .header__top-panel__logo_polytech {
+    transform: scale(1.1);
+}
+
 .header__top-panel__logo_polytech {
+    transition: .3s;
+    cursor: pointer;
     width: 90px;
     height: 90px;
 }
@@ -722,7 +734,7 @@ nav.social {
     max-width: 480px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 nav.social a {
@@ -734,11 +746,10 @@ nav.social a svg {
     width: 40px;
     height: 40px;
     transition: .5s;
-    fill: white;
 }
 
 nav.social a:hover svg {
-    filter: invert(42%) sepia(1503%) saturate(800%) hue-rotate(24deg) brightness(119%) contrast(119%);
+    filter:  invert(78%) sepia(26%) saturate(1563%) hue-rotate(58deg) brightness(300%) contrast(91%);
 }
 
 .cd-faq__items {
@@ -793,10 +804,11 @@ div.cd-faq__trigger {
     width: 30px;
     height: 30px;
     filter: invert(100%);
+    transition: .5s;
 }
 
 .cd-faq__trigger:hover img {
-    filter: invert(99%) sepia(190%) saturate(1900%) hue-rotate(55deg) brightness(80%) contrast(90%);
+    filter: invert(87%) sepia(62%) saturate(2132%) hue-rotate(55deg) brightness(97%) contrast(95%);
 }
 
 a.def_link {
